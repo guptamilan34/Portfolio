@@ -31,13 +31,13 @@ const Sidebar = () => {
         </li>
 
         <li>
-          <a href="milangupta9617@gmail.com">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=milangupta9617@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} /> <span>Email</span>
           </a>
         </li>
         <li>
           <a
-            href="https://wa.me/9993216503"
+            href="https://wa.me/919993216503"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -45,7 +45,7 @@ const Sidebar = () => {
           </a>
         </li>
         <li>
-          <a href="\src\assets\milanresume.pdf" download>
+          <a href="https://drive.google.com/file/d/1cJk7KD4zz9i_P3AJP0TjHdXPVnZMwRSl/view?usp=sharing" download>
             <FontAwesomeIcon icon={faFileDownload} /> <span>Resume</span>
           </a>
         </li>

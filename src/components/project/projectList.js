@@ -25,7 +25,7 @@ export default [
   },
   {
     title: "YouTube BookMaker - Chrome-Extension",
-    duration: "June 2024 - July 2023",
+    duration: "June 2024 - July 2024",
     description: [
  "Developed a Chrome extension for bookmarking YouTube video timestamps.",
 " Implemented bookmarking for YouTube video timestamps, enabling users to save and revisit key moments.",
