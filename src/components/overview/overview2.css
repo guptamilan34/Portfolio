@@ -1,0 +1,155 @@
+/* Container for the entire overview */
+.overview {
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section title styling */
+.overview .title h2 {
+  font-size: 32px;
+  color: #0057b8;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.overview .title h2::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #0057b8;
+  display: block;
+  margin-top: 8px;
+  animation: slideIn 0.8s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50px;
+  }
+}
+
+/* Shared styles for each section */
+.summary,
+.technologies,
+.education {
+  width: 100%;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary:hover,
+.technologies:hover,
+.education:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Summary section */
+.summary p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Technologies section */
+.technologies h3 {
+  font-size: 24px;
+  color: #0057b8;
+  margin-bottom: 15px;
+}
+
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.iconcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  transition: background-color 0.4s ease, transform 0.4s ease;
+  cursor: pointer;
+}
+
+.iconcontainer:hover {
+  background-color: #e0f7fa;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.iconcontainer img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.iconcontainer p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* Education section */
+.education h3 {
+  font-size: 22px;
+  color: #0057b8;
+  margin-bottom: 10px;
+}
+
+.education h4 {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .overview {
+    padding: 20px;
+  }
+
+  .icon-grid {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .iconcontainer {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .iconcontainer img {
+    margin-right: 10px;
+  }
+}
